@@ -48,6 +48,8 @@ This project is a **full-stack web application** built with **Next.js** and **Su
 - Sensitive data access is restricted through row-level security policies.
 - No financial data is shared across users.
 
+---
+
 ##📜 License & Usage Modification: Not permitted.
 
 Redistribution: Only allowed with proper attribution and without any changes to the original files.
