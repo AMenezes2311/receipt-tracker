@@ -1,39 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## 🧾 Project Overview
 
-## Getting Started
+This project is a **full-stack web application** built with **Next.js** and **Supabase** that uses **AI-powered document understanding** to transform receipt photos into structured transaction data. The application focuses on accuracy, privacy, and usability, enabling users to review and manage extracted financial information with confidence.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🧠 Key Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **AI-Powered Receipt Parsing**  
+  Automatically extracts merchant name, date, category, and amount from receipt images using AI-based image understanding and text extraction.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Secure Authentication & Authorization**  
+  Implements secure user authentication, ensuring each user can only access their own data.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Private Image Storage**  
+  Receipt images are stored privately per user using Supabase storage, protecting sensitive financial information.
 
-## Learn More
+- **Human-in-the-Loop Corrections**  
+  Users can review, edit, and correct extracted transaction details, improving reliability and transparency.
 
-To learn more about Next.js, take a look at the following resources:
+- **Transaction History & Management**  
+  Provides a structured transaction history interface where users can filter, update, and manage past receipts.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🔁 Application Flow
 
-## Deploy on Vercel
+1. User authenticates and uploads a receipt image  
+2. AI extracts structured transaction fields  
+3. Data is stored securely in the database  
+4. User reviews and edits extracted information  
+5. Transactions are saved and displayed in history view  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🛠️ Tech Stack
+
+- **Frontend:** Next.js, React, TypeScript  
+- **Backend:** Supabase (Auth, Database, Storage)  
+- **AI / Data Processing:** AI-based OCR and information extraction  
+- **Focus Areas:** Security, data privacy, usability, reliability
+
+---
+
+## 🔐 Privacy & Security Notes
+
+- Receipt images are stored in **private, user-scoped buckets**.
+- Sensitive data access is restricted through row-level security policies.
+- No financial data is shared across users.
 
 ##📜 License & Usage Modification: Not permitted.
 
